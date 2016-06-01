@@ -14,6 +14,9 @@ From your ViewController.Swift
       // Show Activity
       GlobalClass.sharedInstance.activity(self.view)
       
+      // remove activity
+        GlobalClass.sharedInstance.removeActivity(self.view)
+      
       //        check networkConnectivity
         if GlobalClass.sharedInstance.hasConnectivity()
         {
@@ -25,8 +28,7 @@ From your ViewController.Swift
                     (jsonData) -> () in
                     })
         
-        // remove activity
-        GlobalClass.sharedInstance.removeActivity(self.view)
+        
         
         // Set Font
         Your textField or textView or lable.font = GlobalClass.Font.RegularMedium
